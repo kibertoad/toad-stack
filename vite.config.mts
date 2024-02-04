@@ -12,6 +12,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       clean: true,
+      reporter: ['text', 'lcov', 'html'],
       include: ['lib/**'],
       exclude: ['test/**'],
       thresholds: {
